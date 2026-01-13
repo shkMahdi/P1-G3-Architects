@@ -6,3 +6,40 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/*------------------ shared styles -----*/
+.display-flex{
+    display: flex;
+}
+
+/* common colors */
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.dark-2 {
+    color: #424242;
+}
+
+/*------------- header styles----------- */
+/* havbar related style*/
+
+.nav-items {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-links {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar {
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.navbar, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
