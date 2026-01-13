@@ -12,6 +12,16 @@
     display: flex;
 }
 
+.btn-primary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 20px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF900E;
+}
+
 /* common colors */
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
@@ -37,9 +47,38 @@
 .navbar {
     justify-content: space-between;
     margin: 0 auto;
+    align-items: center;
 }
 
 .navbar, .banner {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.brand {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* ------------banner styles----------------- */
+
+.banner-container {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-container p {
+    font-size: 1rem;
+    color: #727272;
 }
