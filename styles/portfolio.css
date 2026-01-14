@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*------------------ shared styles -----*/
-.display-flex{
+.display-flex {
     display: flex;
 }
 
@@ -22,13 +22,34 @@
     background-color: #FF900E;
 }
 
+main>section {
+    margin-top: 130px;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* common colors */
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+.dark-1 {
+    color: #131313;
+}
+
 .dark-2 {
     color: #424242;
+}
+
+.dark-3 {
+    color: #727272;
+}
+
+.orange {
+    color: #FF900E;
 }
 
 /*------------- header styles----------- */
@@ -39,7 +60,8 @@
     margin-right: 30px;
 }
 
-.nav-links {
+
+.nav-link {
     text-decoration: none;
     font-weight: 500;
 }
@@ -50,7 +72,8 @@
     align-items: center;
 }
 
-.navbar, .banner {
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -71,6 +94,7 @@
 
 .banner-image {
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .banner-title {
@@ -78,7 +102,89 @@
     font-weight: bold;
 }
 
-.banner-container p {
+.banner-description {
     font-size: 1rem;
     color: #727272;
+}
+
+
+/* -------------Quick feature related styles------------ */
+.quick-feature-list {
+    align-items: center;
+}
+
+.quick-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.quick-feature {
+    max-width: 540px;
+    margin-left: 70px;
+}
+
+.quick-f-heading {
+    font-size: 2.8rem;
+}
+
+.first-part {
+    font-weight: 500;
+}
+
+.second-part {
+    font-weight: 700;
+}
+
+.third-part {
+    font-weight: 700;
+}
+
+.quick-f-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+
+/* ---------------- responsiver media query------------- */
+
+/* navbar section */
+@media screen and (max-width: 576px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        max-width: 100%;
+    }
+
+    .banner-title {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .nav-items {
+        margin-right: 15px;
+    }
+
+}
+
+/* Quick feature section */
+@media screen and (max-width: 576px) {
+
+    .quick-feature-list {
+        flex-direction: column;
+    }
+
+    .quick-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .quick-feature {
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
 }
