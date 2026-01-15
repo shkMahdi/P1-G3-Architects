@@ -190,6 +190,21 @@ main {
     font-weight: 600;
 }
 
+/* ----------sponsor-logo-container------------- */
+.sponsor-heading,
+.sponsor-des {
+    text-align: center;
+    max-width: 100%;
+}
+
+.sponsor-logo-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin-top: 50px;
+}
+
+
 /* ---------------- responsiver media query------------- */
 
 /* navbar section */
@@ -244,5 +259,16 @@ main {
     .some-fact-description {
         text-align: center;
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sponsor-logo-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+    .logo {
+        max-width: 30%;
     }
 }
