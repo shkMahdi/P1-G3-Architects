@@ -148,6 +148,47 @@ main {
     margin-bottom: 30px;
 }
 
+/* ---------------fearue you will enjoy---------- */
+.main-feature-heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+    border-left: 5px solid #FF900E; 
+    padding-left: 20px;    
+}
+.main-feature-des {
+    max-width: 580px;
+}
+.feature-card {
+    padding: 30px 40px 30px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+
+.experience img {
+    max-width: 100%;
+}
+.experience button{
+    background-color: #FF900E;
+    padding: 45px 42px;
+    border: none;
+    border-radius: 8px;
+    margin-left: -90px;
+    margin-top: -120px;
+}
+#tenyear {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+#exp {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 600px;
+}
+.main-feature {
+    gap: 140px;
+}
+
 /* ---------------some fact section--------------- */
 .some-fact-title {
     font-size: 2.8rem;
@@ -202,6 +243,7 @@ main {
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     margin-top: 50px;
+    filter: grayscale(100%);
 }
 
 /* ----------------footer section---------------- */
@@ -284,5 +326,24 @@ footer {
     }
     .logo {
         max-width: 30%;
+    }
+}
+
+
+/* feature you will enjoy section */
+@media screen and (max-width: 576px) {
+    .main-feature {
+        flex-direction: column;
+    }
+    .good-feature-list {
+        text-align: center;
+    }
+
+    .experience {
+        align-content: center;
+    }
+    .experience button {
+        margin-top: 20px;
+        margin-left: 34px;
     }
 }
